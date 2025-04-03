@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abhaya+Libre:wght@800&family=Alike&family=Cinzel&family=Gelasio&display=swap');
+@import "tailwindcss";
+
+.text-stroke {
+  color: transparent !important;
+  -webkit-text-stroke: 1px #523215;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: 'Gelasio', 'Geist', sans-serif;
+  background-color: #F7F5EB;
+}
+
